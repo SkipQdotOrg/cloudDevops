@@ -1,6 +1,7 @@
 import os
 import boto3
-import requests
+# All dependencies installed in folder "dependencies"
+from dependencies import requestsq 
 
 def publish_metric(event, context):
     cw_client = boto3.client("cloudwatch")
